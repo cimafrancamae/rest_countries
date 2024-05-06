@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "rest_countries_api"
+require "rest_countries"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
