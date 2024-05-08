@@ -44,7 +44,7 @@ module RestCountries
 
     # List of codes
     def codes(codes)
-      response = connection.get("alpha?codes=#{codes.join(',')}")
+      response = connection.get("alpha?codes=#{codes.join(",")}")
       handle_response(response)
     end
 
@@ -92,7 +92,7 @@ module RestCountries
 
     # Filter the output of your request to include only the specified fields.
     def filter(service, fields)
-      response = connection.get("#{service}?fields=#{fields.join(',')}")
+      response = connection.get("#{service}?fields=#{fields.join(",")}")
       handle_response(response)
     end
 
