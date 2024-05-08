@@ -1,24 +1,76 @@
 # RestCountries
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rest_countries`. To experiment with that code, run `bin/console` for an interactive prompt.
+A Ruby Client for [Rest Countries v.3.1](https://restcountries.com/)
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add rest_countries
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install rest_countries
 
 ## Usage
 
-TODO: Write usage instructions here
+To access the API, you'll need to create a RestCountries::Client.
+
+    $ client = RestCountries::Client.new
+
+The client then gives you access to the endpoints
+
+### All
+
+    $ client.all
+
+### Name
+
+    $ client.name(country_name)
+
+### Full Name
+
+    $ client.fullname(country_name)
+
+### Code
+
+    $ client.code(code)
+
+### List of Codes
+
+    $ client.codes(codes)
+
+### Currency
+
+    $ client.currency(currency)
+
+### Demonym
+
+    $ client.demonym(demonym)
+
+### Language
+
+    $ client.language(language)
+
+### Capital City
+
+    $ client.capital(capital)
+
+### Region
+
+    $ client.region(region)
+
+### Subregions
+
+    $ client.subregion(subregion)
+
+### Translation
+
+    $ client.translation(translation)
+
+### Filter Response
+
+    $ client.filter(service, fields)
 
 ## Development
 
