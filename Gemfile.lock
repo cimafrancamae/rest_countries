@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    rest_countries (0.1.0)
-      faraday (~> 1.7, >= 1.7.1)
-      faraday_middleware (~> 1.2)
+    rest_countries (1.0.0)
+      faraday (~> 1.7)
 
 GEM
   remote: https://rubygems.org/
@@ -33,12 +32,10 @@ GEM
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
-    faraday_middleware (1.2.0)
-      faraday (~> 1.0)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
-    multipart-post (2.4.0)
+    multipart-post (2.4.1)
     parallel (1.24.0)
     parser (3.3.1.0)
       ast (~> 2.4.1)
