@@ -58,6 +58,8 @@ The client then gives you access to the endpoints
 
 ### Region
 
+Search by region: Africa, Americas, Asia, Europe, Oceania
+
     $ client.region(region)
 
 ### Subregions
