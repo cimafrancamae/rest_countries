@@ -1,6 +1,5 @@
 require "faraday"
 require "uri"
-require "active_support"
 
 module RestCountries
   class Client
@@ -114,7 +113,7 @@ module RestCountries
     def handle_response(response)
       case response.status
       when 200...300
-        response.body.with_indifferent_access
+        response.body
       when 404
         raise NotFoundError, "Country not found"
       when 400...500
