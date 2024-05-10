@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "https://github.com/cimafrancamae/rest_countries/blob/master/CHANGELOG.md"
 
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  gemspec = File.basename(__FILE__)
+  # gemspec = File.basename(__FILE__)
   spec.files = Dir.glob("{lib}/**/*") + ["LICENSE.txt", "README.md"]
 
   spec.bindir = "exe"
